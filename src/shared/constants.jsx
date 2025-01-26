@@ -9,6 +9,10 @@ import FeaIcon2 from "./../assets/img/feaicon2.png";
 import HeroIcon1 from "./../assets/img/heroicon1.png";
 import HeroIcon2 from "./../assets/img/heroicon2.png";
 import HeroIcon3 from "./../assets/img/heroicon3.png";
+import ResourceIcon1 from "./../assets/img/resourceicon1.png";
+import ResourceIcon2 from "./../assets/img/resourceicon2.png";
+import ResourcePicture1 from "./../assets/img/repicture1.png";
+import ResourcePicture2 from "./../assets/img/repicture2.png";
 
 
 
@@ -24,7 +28,11 @@ export class Constants {
 		FeaIcon2,
 		HeroIcon1,
 		HeroIcon2,
-		HeroIcon3
+		HeroIcon3,
+		ResourceIcon1,
+		ResourceIcon2,
+		ResourcePicture1,
+		ResourcePicture2
 	}
 
 

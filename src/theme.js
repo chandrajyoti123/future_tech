@@ -138,16 +138,7 @@ export const theme = createTheme({
 		MuiButton: {
 			defaultProps: {
 				sx: {
-					// borderRadius: 1,
-					// minWidth: 120,
-					// margin: "0px 8px",
-					// textTransform: "uppercase",
-					// padding: "15px 30px",
-					// borderRadius: "100px",
-					// fontSize: "0.8rem",
-					// fontWeight: "700",
-					// lineHeight: "16px",
-					// outlined variant
+					
 					"&.MuiButton-outlined": {
 						px:"16px",
 						py:"10px",
@@ -163,21 +154,19 @@ export const theme = createTheme({
 					},
 					// contained variant
 					"&.MuiButton-contained": {
-						backgroundColor: "primary.main", // Update to your desired background color
+						width:"100%",
+						px:"18px",
+						py:"24px",
+						backgroundColor: "secondary.main", // Update to your desired background color
 						color: "text.secondary",
-						position: "relative",
-						overflow: "hidden",
+						fontSize:"18px",
+						lineHeight:"27px",
+						fontWeight:400,
+						borderRadius:"8px",
 						letterSpacing: "0.2rem",
-						transition: "all 0.3s ease-in-out",
-						margin:"5px",
-
-						"&:hover": {
-							backgroundColor: "text.secondary",
-							color: "text.primary",
-							"&::before": {
-								opacity: 1,
-							},
-						},
+						borderColor:"rgba(38, 38, 38, 1)",
+						borderWidth:"1px",
+						borderStyle:"solid",
 					},
 					"&.MuiButton-text": {
 						padding: "5px 0px",
