@@ -1,11 +1,11 @@
 import React from 'react';
-import { Box, Grid2, Typography, Button, Tooltip, Badge } from '@mui/material';
+import { Box, Grid2, Typography, Button, Badge } from '@mui/material';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { BORDER_STYLE } from '../shared/constants';
-const Footer = () => {
+const Footer = () => { 
     const data = [
         {
             heading: "Home",
@@ -95,10 +95,7 @@ const Footer = () => {
                             ))
                         }
                     </Grid2>
-
-
-
-                </Grid2>
+</Grid2>
             </Box>
             <Box sx={{ paddingY: "40px", display: "flex", justifyContent: "space-between" }}>
                 <Typography variant='body2' color='text.secondary'>Terms & Conditions | Privacy Policy</Typography>
