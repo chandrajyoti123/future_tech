@@ -5,6 +5,7 @@ import { BORDER_STYLE } from '../../shared/constants'
 import HeroSecCard from '../../shared/components/HeroSecCard'
 import CallMadeIcon from '@mui/icons-material/CallMade';
 import Navbar from '../../layout/Navbar'
+import Layer from './../../assets/img/Layer.png'
 
 
 const HeroSection = () => {
@@ -107,7 +108,7 @@ const HeroSection = () => {
                 <Grid2
                     size={5}
                     sx={{
-                        backgroundImage: 'url("./src/assets/img/Layer.png")',
+                        backgroundImage: `url(${Layer})`,
                         backgroundSize: 'contain',
                         backgroundPosition: 'start',
                         backgroundRepeat: 'no-repeat',
