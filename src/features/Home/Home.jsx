@@ -10,7 +10,7 @@ import TechResources from './TechResources'
 const Home = () => {
   return (
     <div>
-      <HeroSection />
+       <HeroSection />
       <DepthInformation subheading={"Unlock the Power of"} heading={"FutureTech Features"} isButton={false} />
       <FutureFeature />
       <DepthInformation subheading={"A Knowledge Treasure Trove"} heading={"Explore FutureTech's In-Depth Blog Posts"} name={"Blog"} isButton={true} />
