@@ -19,7 +19,7 @@ const TechRevCard = ({ Heading, Text }) => {
 
                                 }}
                             >
-                                <CallMadeIcon />
+                                <CallMadeIcon  sx={{color:'#000000'}}/>
                             </IconButton>
                         }
                         sx={{

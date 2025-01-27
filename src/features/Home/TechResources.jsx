@@ -4,6 +4,7 @@ import React from 'react'
 import { Constants } from '../../shared/constants';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 import { BORDER_STYLE } from '../../shared/constants';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 const CardContainer = ({ children, full }) => {
     return (
@@ -115,7 +116,7 @@ const TechResources = () => {
                                                 <Typography variant='body2' color='text.secondary'>Total {item.name}</Typography>
                                                 <Typography variant='h6'> over {item.count} {item.name}</Typography>
                                             </Box>
-                                            <Button variant='outlined' endIcon={<CallMadeIcon sx={{ color: "warning.main" }} />}> DownLoad {name} Now</Button>
+                                            <Button variant='outlined' endIcon={<VisibilityOutlinedIcon sx={{ color: "warning.main" }} />}>Preview</Button>
 
                                         </Box>
                                     </CardContainer>

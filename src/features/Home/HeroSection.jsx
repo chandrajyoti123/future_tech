@@ -4,6 +4,7 @@ import { Constants } from '../../shared/constants'
 import { BORDER_STYLE } from '../../shared/constants'
 import HeroSecCard from '../../shared/components/HeroSecCard'
 import CallMadeIcon from '@mui/icons-material/CallMade';
+import Navbar from '../../layout/Navbar'
 
 
 const HeroSection = () => {
@@ -30,7 +31,7 @@ const HeroSection = () => {
 
     const number = [
         {
-            number: "300+",
+            number: "300",
             name: "Resources available"
         },
         {
@@ -43,7 +44,7 @@ const HeroSection = () => {
         },
     ]
 
-    const padding = (index) => {
+    const paddingLstSec = (index) => {
         if (index == 0) {
             return "0 50px 0  0"
         }
@@ -55,7 +56,7 @@ const HeroSection = () => {
         }
 
     }
-    const padding1 = (index) => {
+    const paddingFirSec = (index) => {
         if (index == 0) {
             return "0 30px 0  0"
         }
@@ -69,6 +70,10 @@ const HeroSection = () => {
     }
     return (
         <Box bgcolor={"primary.main"}>
+            <Box>
+                <Typography variant='body2' color='text.secondary' py="20px" textAlign={"center"}>Subscribe to our Newsletter For New & latest Blogs and Resources</Typography>
+                <Navbar />
+            </Box>
             <Grid2 container>
                 <Grid2 size={7} borderRight={BORDER_STYLE}>
                     <Box pl={"162px"} pr={"50px"} py={"100px"}>
@@ -79,9 +84,17 @@ const HeroSection = () => {
                     <Grid2 container pl={"162px"} borderTop={BORDER_STYLE}>
                         {
                             number.map((item, index) => (
-                                <Grid2 size={4} sx={{ p: padding1(index), borderRight: index == 2 ? "none" : BORDER_STYLE }} key={index}>
+                                <Grid2 size={4} sx={{ p: paddingFirSec(index), borderRight: index == 2 ? "none" : BORDER_STYLE }} key={index}>
                                     <Box sx={{ py: "50px" }}>
-                                        <Typography variant='h4'>{item.number}</Typography>
+                                        <Typography variant="h4">
+                                            {item.number}
+                                            <Box
+                                                component="span"
+                                                sx={{ color: 'warning.main', fontWeight: 'inherit' ,ml:1 }}
+                                            >
+                                                +
+                                            </Box>
+                                        </Typography>
                                         <Typography variant='body2' color='text.secondary'>{item.name}</Typography>
                                     </Box>
 
@@ -154,7 +167,7 @@ const HeroSection = () => {
             <Grid2 container sx={{ borderTop: BORDER_STYLE, px: "162px" }}>
                 {
                     data.map((item, index) => (
-                        <Grid2 size={4} sx={{ p: padding(index), borderRight: index == 2 ? "none" : BORDER_STYLE }}>
+                        <Grid2 size={4} sx={{ p: paddingLstSec(index), borderRight: index == 2 ? "none" : BORDER_STYLE }} key={index}>
                             <HeroSecCard img={item.img} heading={item.heading} subheading={item.suhead} para={item.para} />
                         </Grid2>
                     ))

@@ -10,14 +10,14 @@ import TechResources from './TechResources'
 const Home = () => {
   return (
     <div>
-      <HeroSection/>
-      <DepthInformation subheading={"Unlock the Power of"} heading={"FutureTech Features"}/>
-      <FutureFeature/>
-      <DepthInformation subheading={"A Knowledge Treasure Trove"} heading={"Explore FutureTech's In-Depth Blog Posts"}/>
-      <TechHubs/>
-      <DepthInformation subheading={"A Knowledge Treasure Trove"} heading={"Explore FutureTech's In-Depth Blog Posts"}/>
-<TechResources/>
-      <DepthInformation subheading={"What Our Readers Say"} heading={"Real Words from Real Readers"} />
+      <HeroSection />
+      <DepthInformation subheading={"Unlock the Power of"} heading={"FutureTech Features"} isButton={false} />
+      <FutureFeature />
+      <DepthInformation subheading={"A Knowledge Treasure Trove"} heading={"Explore FutureTech's In-Depth Blog Posts"} name={"Blog"} isButton={true} />
+      <TechHubs />
+      <DepthInformation subheading={"Your Gateway to In-Depth Information"} heading={"Unlock Valuable Knowledge with FutureTech's Resources"} name={"Resources"} isButton={true} />
+      <TechResources />
+      <DepthInformation subheading={"What Our Readers Say"} heading={"Real Words from Real Readers"} name={"Testimonial"} isButton={true} />
       <Review />
       <TechRevolution />
       <Footer />

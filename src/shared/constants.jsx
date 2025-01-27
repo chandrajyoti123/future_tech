@@ -13,6 +13,8 @@ import ResourceIcon1 from "./../assets/img/resourceicon1.png";
 import ResourceIcon2 from "./../assets/img/resourceicon2.png";
 import ResourcePicture1 from "./../assets/img/repicture1.png";
 import ResourcePicture2 from "./../assets/img/repicture2.png";
+import Logo from './../assets/img/logo.png'
+import LogoLg from './../assets/img/logolg.png'
 
 
 
@@ -32,7 +34,9 @@ export class Constants {
 		ResourceIcon1,
 		ResourceIcon2,
 		ResourcePicture1,
-		ResourcePicture2
+		ResourcePicture2,
+		Logo,
+		LogoLg
 	}
 
 

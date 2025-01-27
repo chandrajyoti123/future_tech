@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Grid2, Typography } from '@mui/material'
-import Rotate from './../../assets/img/rotate.png'
+import { Constants } from '../../shared/constants'
 import TechRevCard from '../../shared/components/TechRevCard'
 import { BORDER_STYLE } from '../../shared/constants'
 export const TextBadge = ({ text }) => {
@@ -27,7 +27,7 @@ const TechRevolution = () => {
         <Box sx={{ paddingX: "162px", backgroundColor: "secondary.main", paddingY: "120px" }}>
             <Grid2 container mb={"80px"}>
                 <Grid2 size={2} >
-                    <img src={Rotate} width={"160px"} />
+                    <img src={Constants.customImages.LogoLg} width={"150px"} />
                 </Grid2>
                 <Grid2 size={10}>
                     <TextBadge text={"Learn, Connect, and Innovate"} />
@@ -40,7 +40,7 @@ const TechRevolution = () => {
             <Grid2 container sx={{ border: BORDER_STYLE, bgcolor: 'primary.main', p: "20px", borderRadius: "12px" }} spacing={"20px"}>
                 {
                     data.map((item, index) => (
-                        <Grid2 size={4} display={"flex"} alignItems={"stretch"}>
+                        <Grid2 size={4} display={"flex"} alignItems={"stretch"} key={index}>
                             <TechRevCard Heading={item.heading} Text={item.text} key={index} />
                         </Grid2>
                     ))

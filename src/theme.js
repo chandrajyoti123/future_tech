@@ -141,11 +141,11 @@ export const theme = createTheme({
 					
 					"&.MuiButton-outlined": {
 						px:"16px",
-						py:"10px",
+						py:"12px",
 						backgroundColor: "rgba(20, 20, 20, 1)", // Update to your desired background color
 						color: "text.secondary",
 						borderRadius:"8px",
-						letterSpacing: "0.2rem",
+						// letterSpacing: "0.2rem",
 						borderColor:"rgba(38, 38, 38, 1)",
 						borderWidth:"1px",
 						borderStyle:"solid",
