@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   base:"/future_tech",
   server: {
-    port: 3000, // Change this to your desired port
-    host: '0.0.0.0', // (Optional) Use this to bind to all network interfaces
+    allowedHosts: ['future-tech-suxg.onrender.com'], // Add the host here
+    host: '0.0.0.0', // Optional: Bind to all network interfaces
+    port: 3000,      // Optional: Your preferred port
   },
 })
