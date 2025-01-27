@@ -83,7 +83,7 @@ const Navbar = () => {
                                         variant="body2"
                                         sx={{
                                             textAlign: 'center',
-                                            color: activePath === item.path ? 'primary.contrastText' : 'text.secondary',
+                                            color: activePath === item.path ? 'text.primary' : 'text.secondary',
                                         }}
                                     >
                                         {item.name}

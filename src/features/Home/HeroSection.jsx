@@ -71,7 +71,7 @@ const HeroSection = () => {
     return (
         <Box bgcolor={"primary.main"}>
             <Box>
-                <Typography variant='body2' color='text.secondary' py="20px" textAlign={"center"}>Subscribe to our Newsletter For New & latest Blogs and Resources</Typography>
+                <Box sx={{display:"flex",alignItems:"center",justifyContent:"center",gap:"10px"}}> <Typography variant='body2' color='text.secondary' py="20px" textAlign={"center"}>Subscribe to our Newsletter For New & latest Blogs and Resources</Typography>  <CallMadeIcon sx={{ color: "warning.main" }} /></Box>
                 <Navbar />
             </Box>
             <Grid2 container>

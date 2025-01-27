@@ -8,7 +8,7 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 const CardContainer = ({ children, full }) => {
     return (
-        <Card sx={{ p: "30px", border: BORDER_STYLE, borderRadius: "13px", bgcolor: "secondary.main", width: full }}>
+        <Card sx={{ p: "20px", border: BORDER_STYLE, borderRadius: "13px", bgcolor: "secondary.main", width: full }}>
             <CardContent>
                 {children}
             </CardContent>
@@ -53,7 +53,7 @@ const TechResources = () => {
                             <Typography variant='h3' mt={"30px"}>{item.name}</Typography>
                             <Typography variant='h6' color='text.secondary'>{item.text}</Typography>
                             <Box sx={{ my: "30px", width: "100%" }}>
-                                <Button variant='contained' endIcon={<CallMadeIcon sx={{ color: "warning.main" }} />}> DownLoad {name} Now</Button>
+                                <Button variant='contained' endIcon={<CallMadeIcon sx={{ color: "warning.main" }} />}> DownLoad {item.name} Now</Button>
                             </Box>
                             <CardContainer>
                                 <Box sx={{ display: "flex", gap: "20px" }}>
@@ -63,7 +63,7 @@ const TechResources = () => {
                                     </Box>
                                     <Box
                                         sx={{
-                                            p: "10px",
+                                            p: "5px",
                                             bgcolor: "primary.main",
                                             // border: BORDER_STYLE,
                                             borderRadius: "12px",
@@ -77,6 +77,7 @@ const TechResources = () => {
                                                 sx={{
                                                     position: "relative",
                                                     marginLeft: index === 0 ? 0 : "-10px", // Collapse by 20px for subsequent images
+                                                    display:"inline"
                                                 }}
                                             >
                                                 <img
